@@ -1,0 +1,9 @@
+:root {
+  --bg-primary: #278374;
+}
+.bgpr {
+  background-color: var(--bg-primary);
+}
+.btn-shadow {
+  box-shadow: 0 0 30px white;
+}

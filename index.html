@@ -20,13 +20,31 @@
       href="https://fonts.googleapis.com/css2?family=Asap:ital,wght@1,500&family=Orbitron:wght@500&family=Poppins:wght@200&family=Roboto:ital,wght@1,300&family=Titan+One&display=swap"
       rel="stylesheet"
     />
+      <link rel="stylesheet" href="//cdn.materialdesignicons.com/5.4.55/css/materialdesignicons.min.css">
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
+  <style>
+    body.debug .container,
+    body.debug .container-fluid {
+      outline: 2px double blue;
+      outline-offset: -2px;
+    }
+  
+    body.debug .row {
+      outline: 2px dashed red;
+      outline-offset: -2px;
+    }
+  
+    body.debug [class*="col-"] {
+      outline: 2px dotted forestgreen;
+      outline-offset: -3px;
+    }
+  </style>
+  <body class="debug">
     <!-- SECTION HEADER/NAV -->
     <header>
       <nav>
-        <div class="container">
+        <div class="container-fluid">
           <img src="" alt="" />
           <a href="">home</a>
           <a href="">about</a>
@@ -42,39 +60,39 @@
 
     <main>
       <!-- SECTION WELCOME -->
-      <section class="container">
+      <section class="container-fluid bgpr">
         <div class="row">
           <div class="col-md-6">
             <h1>Lorem ipsum dolor sit amet.</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, hic?</p>
-            <button>get started</button>
-            <a href="LINK">
-              <i>watch video</i>
+            <button class="btn btn-shadow">get started</button>
+            <a href="http://thiswaifudoesnotexist.net">
+              <i class="mdi mdi-star">watch video</i>
             </a>
           </div>
           <div class="col-md-6">
             <div>
-              <img src="LINK" alt="">
+              <img src="./2204_w030_n002_373b_p1_373.jpg" alt="" class="img-fluid">
               </div>
             </div>
           </div>
         </div>
       <!-- NOTE position relative/absolute -->
         <div class="row">
-          <div class="col-md-3">
-            <i></i>
+          <div class="col-md-3 d-flex flex-column bgpr text-light">
+                <i class="mdi mdi-star-face fs-4"></i>
             <span>Lorem, ipsum.</span>
           </div>
-          <div class="col-md-3">
-            <i></i>
+          <div class="col-md-3 d-flex flex-column bgpr text-light">
+                <i class="mdi mdi-star-face fs-4"></i>
             <span>Lorem, ipsum.</span>
           </div>
-          <div class="col-md-3">
-            <i></i>
+          <div class="col-md-3 d-flex flex-column bgpr text-light">
+                <i class="mdi mdi-star-face fs-4"></i>
             <span>Lorem, ipsum.</span>
           </div>
-          <div class="col-md-3">
-            <i></i>
+          <div class="col-md-3 d-flex flex-column bgpr text-light">
+                <i class="mdi mdi-star-face fs-4"></i>
             <span>Lorem, ipsum.</span>
           </div>
         </div>
@@ -84,87 +102,370 @@
         <div class="row">
           <div class="col-6">
             <h1>about us</h1>
+            <!-- <div>TODO lINE</div> -->
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam, unde.</p>
           </div>
         </div>
         <div class="row">
           <div class="col-md-6">
             <h3>Lorem ipsum dolor sit amet, consectetur adipisicing.</h3>
-            <img src="LINK" alt="">
+            <img src="http://thiscatdoesnotexist.com" alt="coolcat">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti cupiditate quaerat nesciunt ex architecto culpa dolores eligendi, corporis a esse.</p>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe harum cum, recusandae est ex quidem! Quos explicabo molestiae eius sapiente.</p>
           </div>
-          <div class="col-md-6"></div>
+          <div class="col-md-6">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda eum omnis veritatis? Voluptatum perferendis cupiditate consequatur animi sequi dicta libero!</p>
+           <ul>
+            <li>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. In, quia.
+            </li>
+            <li>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. In, quia.
+            </li>
+            <li>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. In, quia.
+            </li>
+           </ul>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio aliquam deleniti quae error odit soluta deserunt quod, ex, ducimus, accusantium sapiente ab? Quo quae doloribus atque, ex inventore sint laboriosam.</p>
+            <div>
+              <img src="http://thiscatdoesnotexist.com" alt="coolcat">
+            </div>
+          </div>
         </div>
         <div class="row">
-          <div class="col-md-4"></div>
-          <div class="col-md-4"></div>
-        </div>
-        <div class="row">
-          <div class="col-md-10"></div>
+          <div class="col-md-4">
+            <div>
+              <img src="http://thiscatdoesnotexist.com" alt="coolcat">
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div>
+              <span>#</span>
+              <p>
+                <b>Lorem, ipsum.</b>
+                Lorem ipsum dolor sit amet.
+              </p>
+            </div>
+            <div>
+              <span>#</span>
+              <p>
+                <b>Lorem, ipsum.</b>
+                Lorem ipsum dolor sit amet.
+              </p>
+            </div>
+            <div>
+              <span>#</span>
+              <p>
+                <b>Lorem, ipsum.</b>
+                Lorem ipsum dolor sit amet.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
-
+      <!-- SECTION -->
+      <div class="container">
+         <div class="row">
+        <div class="col-md-10">
+          <div>
+            <img src="LINK" alt="">
+          </div>
+          <button>PLAY</button>
+          <h1>Lorem, ipsum.</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur totam iste fugiat exercitationem aliquam repudiandae similique doloremque perspiciatis sequi necessitatibus!</p>
+          <button>Call to action</button>
+        </div>
+      </div>
+      </div>
+     
       <!--SECTION services-->
       <div class="container">
         <div class="row">
-          <div class="col-md-6"></div>
+          <div class="col-md-6">
+            <h1>Lorem, ipsum.</h1>
+            <!-- <div>TODO</div> -->
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus, tenetur?</p>
+          </div>
         </div>
         <div class="row">
-          <div class="col-md-3"></div>
-          <div class="col-md-3"></div>
-          <div class="col-md-3"></div>
+          <div class="col-md-3">
+            <i class="mdi mdi-star-face fs-1"></i>
+            <h4>Lorem, ipsum.</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione dolores asperiores commodi veritatis culpa cum eveniet excepturi expedita itaque optio.</p>
+            <a href="https://thiswaifudoesnotexist.net">read more</a>
+          </div>
+          <div class="col-md-3">
+             <i class="mdi mdi-star-face fs-1"></i>
+            <h4>Lorem, ipsum.</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione dolores asperiores commodi veritatis culpa cum eveniet excepturi expedita itaque optio.</p>
+            <a href="https://thiswaifudoesnotexist.net">read more</a>
+          </div>
+          <div class="col-md-3">
+             <i class="mdi mdi-star-face fs-1"></i>
+            <h4>Lorem, ipsum.</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione dolores asperiores commodi veritatis culpa cum eveniet excepturi expedita itaque optio.</p>
+            <a href="https://thiswaifudoesnotexist.net">read more</a>
+          </div>
         </div>
         <div class="row">
-          <div class="col-md-3"></div>
-          <div class="col-md-3"></div>
-          <div class="col-md-3"></div>
+          <div class="col-md-3">
+             <i class="mdi mdi-star-face fs-1"></i>
+            <h4>Lorem, ipsum.</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione dolores asperiores commodi veritatis culpa cum eveniet excepturi expedita itaque optio.</p>
+            <a href="https://thiswaifudoesnotexist.net">read more</a>
+          </div>
+          <div class="col-md-3">
+             <i class="mdi mdi-star-face fs-1"></i>
+            <h4>Lorem, ipsum.</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione dolores asperiores commodi veritatis culpa cum eveniet excepturi expedita itaque optio.</p>
+            <a href="https://thiswaifudoesnotexist.net">read more</a>
+          </div>
+          <div class="col-md-3">
+             <i class="mdi mdi-star-face fs-1"></i>
+            <h4>Lorem, ipsum.</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione dolores asperiores commodi veritatis culpa cum eveniet excepturi expedita itaque optio.</p>
+            <a href="https://thiswaifudoesnotexist.net">read more</a>
+          </div>
         </div>
       </div>
 
       <!-- SECTION our team -->
       <div class="container">
         <div class="row">
-          <div class="col-md-6"></div>
+          <div class="col-md-6">
+            <h1>Lorem, ipsum.
+            </h1>
+            <!-- <div>TODO</div> -->
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim exercitationem nisi nulla minima maiores labore nam reiciendis velit quis mollitia!</p>
+          </div>
         </div>
         <div class="row">
-          <div class="col-md-3"></div>
-          <div class="col-md-3"></div>
-          <div class="col-md-3"></div>
-          <div class="col-md-3"></div>
+          <div class="col-md-3">
+            <div>
+              <img src="https://thiscatdoesnotexist.com" alt="coolcat">
+            </div>
+            <div>
+              <h6>Lorem, ipsum.</h6>
+            <span>Lorem.</span>
+            </div>
+            <div>
+              <i class="mdi mdi-star-face fs-4"></i>
+              <i class="mdi mdi-star-face fs-4"></i>
+              <i class="mdi mdi-star-face fs-4"></i>
+              <i class="mdi mdi-star-face fs-4"></i>
+            </div>
+          </div>
+
+
+          <div class="col-md-3">
+                     <div>
+              <img src="https://thiscatdoesnotexist.com" alt="coolcat">
+            </div>
+            <div>
+              <h6>Lorem, ipsum.</h6>
+            <span>Lorem.</span>
+            </div>
+            <div>
+              <i class="mdi mdi-star-face fs-4"></i>
+              <i class="mdi mdi-star-face fs-4"></i>
+              <i class="mdi mdi-star-face fs-4"></i>
+              <i class="mdi mdi-star-face fs-4"></i>
+            </div>
+          </div>
+          <div class="col-md-3">
+                     <div>
+              <img src="https://thiscatdoesnotexist.com" alt="coolcat">
+            </div>
+            <div>
+              <h6>Lorem, ipsum.</h6>
+            <span>Lorem.</span>
+            </div>
+            <div>
+              <i class="mdi mdi-star-face fs-4"></i>
+              <i class="mdi mdi-star-face fs-4"></i>
+              <i class="mdi mdi-star-face fs-4"></i>
+              <i class="mdi mdi-star-face fs-4"></i>
+            </div>
+          </div>
+          <div class="col-md-3">
+                     <div>
+              <img src="https://thiscatdoesnotexist.com" alt="coolcat">
+            </div>
+            <div>
+              <h6>Lorem, ipsum.</h6>
+            <span>Lorem.</span>
+            </div>
+            <div>
+              <i class="mdi mdi-star-face fs-4"></i>
+              <i class="mdi mdi-star-face fs-4"></i>
+              <i class="mdi mdi-star-face fs-4"></i>
+              <i class="mdi mdi-star-face fs-4"></i>
+            </div>
+          </div>
         </div>
       </div>
 
       <!-- SECTION blog -->
       <div class="container">
         <div class="row">
-          <div class="col-md-6"></div>
+          <div class="col-md-6">
+            <h1>Lorem, ipsum dolor.</h1>
+            <!-- <div>TODO</div> -->
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, molestias!
+            </p>
+          </div>
         </div>
         <div class="row">
-          <div class="col-md-4"></div>
-          <div class="col-md-4"></div>
-          <div class="col-md-4"></div>
+          <div class="col-md-4">
+                     <div>
+              <img src="https://thiscatdoesnotexist.com" alt="coolcat">
+            </div>
+            <div>
+              <span>Lorem.</span>
+              <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, rerum.</h6>
+            </div>
+            <div>
+              <i class="mdi mdi-star-face fs-4"></i>
+              <span>Lorem, ipsum.</span>
+              <span>lorem 10, 2022</span>
+            </div>
+          </div>
+          <div class="col-md-4">
+                  <div>
+              <img src="https://thiscatdoesnotexist.com" alt="coolcat">
+            </div>
+            <div>
+              <span>Lorem.</span>
+              <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, rerum.</h6>
+            </div>
+            <div>
+              <i class="mdi mdi-star-face fs-4"></i>
+              <span>Lorem, ipsum.</span>
+              <span>lorem 10, 2022</span>
+            </div>
+          </div>
+          </div>
+          <div class="col-md-4">
+                  <div>
+              <img src="https://thiscatdoesnotexist.com" alt="coolcat">
+            </div>
+            <div>
+              <span>Lorem.</span>
+              <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, rerum.</h6>
+            </div>
+            <div>
+              <i class="mdi mdi-star-face fs-4"></i>
+              <span>Lorem, ipsum.</span>
+              <span>lorem 10, 2022</span>
+            </div>
+          </div>
+          </div>
         </div>
       </div>
 
       <!-- SECTION contact -->
       <div class="container">
         <div class="row">
-          <div class="col-md-6"></div>
+          <div class="col-md-6">
+            <h1>lorem</h1>
+            <!-- <div>TODO</div> -->
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto, numquam.</p>
+          </div>
         </div>
         <div class="row">
-          <div class="col-md-4"></div>
-          <div class="col-md-8"></div>
+          <div class="col-md-4">
+            <div>
+              <i class="mdi mdi-star-face fs-4"></i>
+              <h6>lorem:</h6>
+              <span>Lorem ipsum dolor sit.</span>
+            </div>
+            <div>
+              <i class="mdi mdi-star-face fs-4"></i>
+              <h6>lorem:</h6>
+              <span>Lorem ipsum dolor sit.</span>
+            </div>
+            <div>
+              <i class="mdi mdi-star-face fs-4"></i>
+              <h6>lorem:</h6>
+              <span>Lorem ipsum dolor sit.</span>
+            </div>
+            <div>
+              <i class="mdi mdi-star-face fs-4"></i>
+              <h6>lorem:</h6>
+              <span>Lorem ipsum dolor sit.</span>
+            </div>
+          </div>
+          <div class="col-md-8">
+            <div class="input-group input-group-sm mb-3">
+  <span class="input-group-text" id="inputGroup-sizing-sm">name</span>
+  <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+</div>
+<div class="input-group input-group-sm mb-3">
+  <span class="input-group-text" id="inputGroup-sizing-sm">phone</span>
+  <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+</div>
+            <div class="mb-3">
+  <label for="exampleFormControlInput1" class="form-label">Email address</label>
+  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@place.com">
+</div>
+<div class="mb-3">
+  <label for="exampleFormControlTextarea1" class="form-label">text area</label>
+  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+</div>
+<div>
+  <button class="btn btn-primary" type="submit">SUBMIT</button>
+</div>
+          </div>
         </div>
       </div>
 
       <!-- SECTION info -->
       <div class="container">
         <div class="row">
-          <div class="col-md-5"></div>
-          <div class="col-md-2"></div>
-          <div class="col-md-2"></div>
-          <div class="col-md-3"></div>
+          <div class="col-md-5">
+            <div>
+              <h1>lorem</h1>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam accusamus reiciendis in tempora qui voluptatum assumenda excepturi ut consequatur earum?</p>
+            </div>
+            <div>
+               <i class="mdi mdi-star-face fs-4"></i>
+               <i class="mdi mdi-star-face fs-4"></i>
+               <i class="mdi mdi-star-face fs-4"></i>
+               <i class="mdi mdi-star-face fs-4"></i>
+            </div>
+          </div>
+          <div class="col-md-2">
+          <div class="row flex-column">
+            <h5>lorem</h5>
+            <span>lorem</span>
+            <span>lorem</span>
+            <span>lorem</span>
+            <span>lorem</span>
+            <span>lorem</span>
+          </div>
+          </div>
+          <div class="col-md-2">
+            <div class="row flex-column">
+            <h5>lorem</h5>
+            <span>lorem</span>
+            <span>lorem</span>
+            <span>lorem</span>
+            <span>lorem</span>
+            <span>lorem</span>
+          </div>
+          </div>
+          <div class="col-md-3">
+            <div class="row flex-column">
+            <h5>lorem</h5>
+            <span>street</span>
+            <span>place, PL 34535</span>
+            <span>United States</span>
+          </div>
+          <div class="row flex-column">
+            <span>Phone: +1 123.232.3456</span>
+            <span>email: lorem@lorem.com</span>
+          </div>
+          </div>
         </div>
       </div>
     </main>
@@ -172,7 +473,19 @@
     <footer>
       <div class="container">
         <div class="row">
-          <div class="col-md-6"></div>
+          <div class="col-md-6">
+            <div>
+              <i class="mdi mdi-star-face fs-6">Copyright <b>impact</b>
+            </i>
+            <span>all rights reserved</span>
+          </div>
+          <div>
+            <span>designed by daniel/carlos</span>
+            <span><a href="https://www.freepik.com/free-vector/magic-witch-wizard-hats-halloween-costume_26474551.htm#query=png&position=1&from_view=keyword">Image by upklyak</a> on Freepik</span>
+          </div>
+              
+
+          </div>
         </div>
       </div>
     </footer>
