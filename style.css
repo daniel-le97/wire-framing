@@ -1,9 +1,33 @@
 :root {
   --bg-primary: #278374;
+  --bg-secondary: rgb(221, 218, 218);
 }
 .bgpr {
   background-color: var(--bg-primary);
 }
 .btn-shadow {
   box-shadow: 0 0 30px white;
+}
+.bar {
+  height: 0.25em;
+  width: 5em;
+  align-self: center;
+  display: flex;
+}
+.pad {
+  padding-left: 24px;
+  padding-right: 24px;
+}
+.video-action {
+  background-image: url(https://www.arborday.org/images/hero/hero-sunlight-streaming-through-colorful-forest-ATCB-USE-ONLY.jpg);
+}
+.transparent {
+  background-color: rgba(0, 0, 0, 0);
+  border-color: white;
+}
+.theme {
+  background-color: var(--bg-secondary);
+}
+.theme2 {
+  background-color: rgb(242, 242, 242);
 }
