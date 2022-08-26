@@ -31,3 +31,17 @@
 .theme2 {
   background-color: rgb(242, 242, 242);
 }
+.card-fx {
+  position: absolute;
+  min-height: 15vw;
+  min-width: 30vw;
+}
+.c-shadow {
+  width: 250px;
+  box-shadow: 8px 4px 8px 4px rgba(0, 0, 0, 0.2),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+}
+.primary-light {
+  background-color: #319585;
+}
